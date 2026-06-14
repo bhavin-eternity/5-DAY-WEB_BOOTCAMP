@@ -1,9 +1,13 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: system-ui, sans-serif;
-  color: #111;
-  background: #f9f9f7;
+  color: #f5f5f5;
+  background: #0f1115;
 }
 
 .main_sec {
@@ -18,12 +22,13 @@ body {
   font-weight: 500;
   letter-spacing: -1px;
   line-height: 1;
+  color: #ffffff;
 }
 
 .left p {
   margin-top: 0.75rem;
   font-size: 1.1rem;
-  color: #666;
+  color: #a0a8b5;
 }
 
 .profile-img {
@@ -31,41 +36,37 @@ body {
   height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #2a2f38;
 }
 
 .about {
   padding: 3rem 8vw;
-  border-top: 1px solid #e8e8e8;
+  border-top: 1px solid #222831;
 }
 
-.about h2 {
+.about h2,
+.contact h2 {
   font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #999;
+  color: #7c8594;
   margin-bottom: 1rem;
 }
 
 .about p {
   font-size: 1rem;
   line-height: 1.8;
-  color: #333;
+  color: #d1d5db;
   max-width: 540px;
 }
 
 .contact {
   padding: 3rem 8vw;
-  border-top: 1px solid #e8e8e8;
+  border-top: 1px solid #222831;
 }
 
 .contact h2 {
-  font-size: 0.8rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #999;
   margin-bottom: 1.5rem;
 }
 
@@ -76,20 +77,28 @@ form {
   max-width: 420px;
 }
 
-input, textarea {
+input,
+textarea {
   font-family: inherit;
   font-size: 0.95rem;
   padding: 10px 14px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #2a2f38;
   border-radius: 8px;
-  background: #fff;
-  color: #111;
+  background: #171b22;
+  color: #f5f5f5;
   outline: none;
   resize: vertical;
 }
 
-input:focus, textarea:focus {
-  border-color: #aaa;
+input::placeholder,
+textarea::placeholder {
+  color: #7c8594;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #4f8cff;
+  box-shadow: 0 0 0 3px rgba(79, 140, 255, 0.15);
 }
 
 button {
@@ -97,20 +106,22 @@ button {
   font-family: inherit;
   font-size: 0.9rem;
   padding: 9px 22px;
-  border: 1px solid #ccc;
+  border: 1px solid #4f8cff;
   border-radius: 8px;
-  background: transparent;
-  color: #111;
+  background: #4f8cff;
+  color: #ffffff;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 button:hover {
-  background: #f0f0f0;
+  background: #3d78e8;
+  border-color: #3d78e8;
 }
 
 footer {
   padding: 2rem 8vw;
-  border-top: 1px solid #e8e8e8;
+  border-top: 1px solid #222831;
   font-size: 0.85rem;
-  color: #bbb;
+  color: #7c8594;
 }
